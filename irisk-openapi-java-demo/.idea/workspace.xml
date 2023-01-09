@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="744ac98e-70ad-45d5-80bd-548c76edaf87" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskCheckDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskCheckDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskConfigDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskConfigDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskDetailDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskDetailDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/mobile/RiskCheckDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/mobile/RiskCheckDemo.java" afterDir="false" />
-    </list>
+    <list default="true" id="744ac98e-70ad-45d5-80bd-548c76edaf87" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
