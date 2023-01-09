@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="744ac98e-70ad-45d5-80bd-548c76edaf87" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d8f45270ea9f156baede8a2d173ae8758ec4e6a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4fd3b6dbb4df7e8ac65c6979ca9efef0db93dcc5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79abc2848a460eb56018ab2e787cce84b0f7df48" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskCheckDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskCheckDemo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskConfigDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskConfigDemo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskDetailDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskDetailDemo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/mobile/RiskCheckDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/mobile/RiskCheckDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -10,11 +10,11 @@ namespace Com.Netease.Is.Irisk.Demo
         public static void riskConfig()
         {
             // 产品id，每个应用接入时，会分配secretId和私钥secretKey。
-            String secretId = "386dfebe19a3a45cd95e76cf838475ce";
+            String secretId = "your_secret_id";
             // 产品密钥，每个应用接入时，会分配secretId和私钥secretKey。
-            String secretKey = "4817728b19fb48c6aab9f3943be98491";
+            String secretKey = "your_secret_key";
             // 每个业务接入时，均会分配业务 ID，有对应的密钥 secretId。
-            String businessId = "69f553c6fe2e3b54b18e8c35a0b097f1";
+            String businessId = "your_business_id";
             // 版本号，如400
             String version = "400";
             // 接口URL
@@ -29,7 +29,7 @@ namespace Com.Netease.Is.Irisk.Demo
             parameters.Add("secretId", secretId);
             parameters.Add("businessId", businessId);
             parameters.Add("version", version);
-            parameters.Add("timestamp", "1672812678182");
+            parameters.Add("timestamp", timestamp");
             parameters.Add("nonce", nonce);
             // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
             parameters.Add("ip", "1.1.1.1");
