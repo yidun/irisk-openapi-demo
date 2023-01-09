@@ -14,13 +14,13 @@ import java.util.Map;
 public class RiskCheckDemo {
 
     // 产品id，每个应用接入时，会分配secretId和私钥secretKey。
-    private static final String SECRET_ID = "your_secretk_id";
+    private static final String SECRET_ID = "386dfebe19a3a45cd95e76cf838475ce";
 
     // 产品密钥，每个应用接入时，会分配secretId和私钥secretKey。
-    private static final String SECRET_KEY = "your_secretk_key";
+    private static final String SECRET_KEY = "4817728b19fb48c6aab9f3943be98491";
 
     // 每个业务接入时，均会分配业务 ID，有对应的密钥 secretId。
-    private static final String BUSINESS_ID = "your_business_id";
+    private static final String BUSINESS_ID = "69f553c6fe2e3b54b18e8c35a0b097f1";
 
     // 版本号，如400
     private static final String VERSION = "400";
@@ -29,21 +29,21 @@ public class RiskCheckDemo {
     private static final String API_URL = "http://ir-open.dun.163.com/v4/risk/check";
 
     // 随机码，32位
-    private static final String NONCE = "mmm888f73yyy59440583zzz9bfcc79de";
+    private static final String NONCE = "BWJOGAEbplxiaFxSsSV4nzdeznJJWfk7";
 
     public static void main(String[] args) throws Exception {
         Map<String, Object> params = new HashMap<>();
         // 调用接口当前时间，单位毫秒
-        Long timeStamp = System.currentTimeMillis();
+        Long timeStamp = 1672812678182L;
         params.put("secretId", SECRET_ID);
         params.put("businessId", BUSINESS_ID);
         params.put("nonce", NONCE);
         params.put("timestamp", timeStamp);
         params.put("version", VERSION);
         // 风控SDK上报的数据后回参获取到的 token，应用方需要从智能风控客户端SDK获取该数据。详情请查看客户端接入文档。
-        params.put("token", "your_token");
+        params.put("token", "wgZxE9Of85RBQkFBQALAJzrNjXg7lhg5");
         // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
-        params.put("ip", "1.1.1.1");
+        params.put("ip", "183.136.182.141");
         // 使用secretKey签名的数据，校验权限
         String signature = SignatureUtils.genSignature(SECRET_KEY, params);
         params.put("signature", signature);

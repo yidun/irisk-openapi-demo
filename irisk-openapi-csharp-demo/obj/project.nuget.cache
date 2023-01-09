@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "UgBzS5PpeAiRws/nbFO/4utEjS5+X/H3OZw50Ucf3xwThwsxFmyqMFlUQ4OF3+RF+RtTWdXg++/bdLtTSU4tQg==",
+  "success": true,
+  "projectFilePath": "/Users/dongyisheng/Project/irisk-openapi-demo/irisk-openapi-csharp-demo/MyApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/dongyisheng/.nuget/packages/bouncycastle.crypto.dll/1.8.1/bouncycastle.crypto.dll.1.8.1.nupkg.sha512",
+    "/Users/dongyisheng/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net6.0”还原包“BouncyCastle.Crypto.dll 1.8.1”。此包可能与项目不完全兼容。",
+      "libraryId": "BouncyCastle.Crypto.dll",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
