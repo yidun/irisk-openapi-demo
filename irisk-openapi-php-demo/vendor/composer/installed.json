@@ -1,0 +1,74 @@
+{
+    "packages": [
+        {
+            "name": "ch4o5/sm3-php",
+            "version": "1.1.6",
+            "version_normalized": "1.1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DongyunLee/SM3-PHP.git",
+                "reference": "720c9804c5bc8bab702af3524738152e0c66b09f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DongyunLee/SM3-PHP/zipball/720c9804c5bc8bab702af3524738152e0c66b09f",
+                "reference": "720c9804c5bc8bab702af3524738152e0c66b09f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "delight-im/base-convert": "PHP5.6之后版本可用，用于优化进制转换的性能",
+                "ext-gmp": "delight-im/base-convert依赖，用于优化进制转换的性能",
+                "hirak/prestissimo": "可以通过并行下载，加速 composer 包的安装，Composer2 已经很快了，不再需要"
+            },
+            "time": "2022-02-11T10:10:40+00:00",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "SM3\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "ch4o5",
+                    "email": "li_dongyun@outlook.com",
+                    "homepage": "https://blog.doylee.cn/"
+                }
+            ],
+            "description": "国密sm3加密方式的PHP实现",
+            "homepage": "https://sm3.doylee.cn/",
+            "support": {
+                "docs": "https://sm3.doylee.cn/",
+                "email": "li_dongyun@outlook.com",
+                "issues": "https://github.com/DongyunLee/SM3-PHP/issues",
+                "source": "https://github.com/DongyunLee/SM3-PHP/tree/v1.1.6"
+            },
+            "funding": [
+                {
+                    "url": "https://afdian.net/@ch4o5",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://blog.doylee.cn/give-a-reward",
+                    "type": "custom"
+                }
+            ],
+            "install-path": "../ch4o5/sm3-php"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

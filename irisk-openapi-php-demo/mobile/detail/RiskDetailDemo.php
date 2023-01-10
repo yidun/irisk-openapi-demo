@@ -24,6 +24,7 @@ function check($params)
     $params["timestamp"] = time() * 1000;
     // 随机码 32位
     $params["nonce"] = "mmm888f73yyy59440583zzz9bfcc79de";
+    $params["signature"] = gen_signature(SECRET_KEY, $params);
     $params["beginTimestamp"] = 1667959831798;
     $params["endTimestamp"] = 1667959915103;
     // 用于分页查询的关联标记
@@ -39,7 +40,6 @@ function check($params)
     // app版本
     $params["appVersion"] = "1.0.2";
     $params["ip"] = "192.168.1.1";
-    $params["signature"] = gen_signature(SECRET_KEY, $params);
     $params = toUtf8($params);
 
 
@@ -49,31 +49,6 @@ function check($params)
     } else {
         return json_decode($result, true);
     }
-}
-
-/**
- * 计算参数签名
- * $params 请求参数
- * $secretKey secretKey
- */
-function gen_signature($secretKey, $params){
-    $params = array(
-        "secretId" => $params["secretId"],
-        "businessId" => $params["businessId"],
-        "version" => $params["version"],
-        "timestamp" => $params["timestamp"],
-        "nonce" => $params["nonce"],
-    );
-    ksort($params);
-    $buff="";
-    foreach($params as $key=>$value){
-        if($value !== null) {
-            $buff .=$key;
-            $buff .=$value;
-        }
-    }
-    $buff .= $secretKey;
-    return md5($buff);
 }
 
 // 简单测试

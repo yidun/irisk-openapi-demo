@@ -28,6 +28,7 @@ function check($params)
     $params["token"] = "your_token";
     // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
     $params["ip"] = "1.1.1.1";
+    $params["signature"] = gen_signature(SECRET_KEY, $params);
     // 用户/玩家的角色 ID，非游戏类型应用，roleId 可以与 roleAccount 相同
     $params["roleId"] = "yyyyyyy";
     // 用户/玩家的角色名称，非游戏类型应用，roleName 可以是当前用户昵称相同
@@ -44,7 +45,6 @@ function check($params)
     $params["assetVersion"] = "assetVersion";
     // 额外/拓展的信息，应用 / 游戏方可以自己构建json结构，最大长度：2048。不同场景构建信息见分场景接入说明
     $params["extData"] = "";
-    $params["signature"] = gen_signature(SECRET_KEY, $params);
     $params = toUtf8($params);
 
 
@@ -54,33 +54,6 @@ function check($params)
     } else {
         return json_decode($result, true);
     }
-}
-
-/**
- * 计算参数签名
- * $params 请求参数
- * $secretKey secretKey
- */
-function gen_signature($secretKey, $params){
-    $params = array(
-        "secretId" => $params["secretId"],
-        "businessId" => $params["businessId"],
-        "version" => $params["version"],
-        "timestamp" => $params["timestamp"],
-        "nonce" => $params["nonce"],
-        "token" => $params["token"],
-        "ip" => $params["ip"],
-    );
-    ksort($params);
-    $buff="";
-    foreach($params as $key=>$value){
-        if($value !== null) {
-            $buff .=$key;
-            $buff .=$value;
-        }
-    }
-    $buff .= $secretKey;
-    return md5($buff);
 }
 
 // 简单测试

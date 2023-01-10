@@ -26,6 +26,26 @@ function curl_post($params, $url, $timout){
 }
 
 /**
+ * 生成签名方法
+ * 不同openapi的签名参数不同
+ * @param $secretKey
+ * @param $params
+ * @return string
+ */
+function gen_signature($secretKey, $params){
+    ksort($params);
+    $buff="";
+    foreach($params as $key=>$value){
+        if($value !== null) {
+            $buff .=$key;
+            $buff .=$value;
+        }
+    }
+    $buff .= $secretKey;
+    return md5($buff);
+}
+
+/**
  * 将输入数据的编码统一转换成utf8
  * @params 输入的参数
  */

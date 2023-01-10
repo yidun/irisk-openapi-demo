@@ -28,6 +28,7 @@ function check($params)
     $params["sdkData"] = "your_sdk_data";
 
     $params["signature"] = gen_signature(SECRET_KEY, $params);
+    var_dump($params["signature"]);
     $params = toUtf8($params);
 
 
@@ -37,33 +38,6 @@ function check($params)
     } else {
         return json_decode($result, true);
     }
-}
-
-/**
- * 计算参数签名
- * $params 请求参数
- * $secretKey secretKey
- */
-function gen_signature($secretKey, $params){
-    $params = array(
-        "secretId" => $params["secretId"],
-        "businessId" => $params["businessId"],
-        "version" => $params["version"],
-        "timestamp" => $params["timestamp"],
-        "nonce" => $params["nonce"],
-        "ip" => $params["ip"],
-        "sdkData" => $params["sdkData"],
-    );
-    ksort($params);
-    $buff="";
-    foreach($params as $key=>$value){
-        if($value !== null) {
-            $buff .=$key;
-            $buff .=$value;
-        }
-    }
-    $buff .= $secretKey;
-    return md5($buff);
 }
 
 // 简单测试
