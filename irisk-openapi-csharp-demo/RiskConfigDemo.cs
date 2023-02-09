@@ -29,7 +29,7 @@ namespace Com.Netease.Is.Irisk.Demo
             parameters.Add("secretId", secretId);
             parameters.Add("businessId", businessId);
             parameters.Add("version", version);
-            parameters.Add("timestamp", timestamp");
+            parameters.Add("timestamp", timestamp);
             parameters.Add("nonce", nonce);
             // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
             parameters.Add("ip", "1.1.1.1");

@@ -9,7 +9,7 @@ namespace Com.Netease.Is.Irisk.Demo
     {
         static void Main(string[] args)
         {
-            RiskCheckDemo.riskCheck();
+            WebRiskCheckDemo.riskCheck();
         }
     }
 }

@@ -1,4 +1,4 @@
-var utils = require("./utils");
+var utils = require("../utils");
 // 产品id，每个应用接入时，会分配secretId和私钥secretKey。
 var secretId = "your_secretk_id";
 // 产品密钥，每个应用接入时，会分配secretId和私钥secretKey。

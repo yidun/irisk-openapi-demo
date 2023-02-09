@@ -1,9 +1,0 @@
-
-e
-java:S11923"HDefine a constant instead of duplicating this literal "yyyyyyy" 3 times.(³˜ô†8Ù×â±Ì0
-h
-java:S3252C"FUse static access with "com.alibaba.fastjson.JSON" for "toJSONString".(¸Íş´ûÿÿÿÿ8æí˜Ì0
-b
-java:S3252D"EUse static access with "com.alibaba.fastjson.JSON" for "parseObject".(°²µ8æí˜Ì0
-U	java:S106I"9Replace this use of System.out or System.err by a logger.(™Ëü°8„ıê˜Ì0
-U	java:S106K"9Replace this use of System.out or System.err by a logger.(ÑÎó8„ıê˜Ì0

@@ -29,7 +29,7 @@ namespace Com.Netease.Is.Irisk.Demo
             parameters.Add("secretId", secretId);
             parameters.Add("businessId", businessId);
             parameters.Add("version", version);
-            parameters.Add("timestamp", timestamp");
+            parameters.Add("timestamp", timestamp);
             parameters.Add("nonce", nonce);
             // 2.生成签名信息，使用secretKey签名的数据，校验权限
             String signature = Utils.genSignature(secretKey, parameters);
