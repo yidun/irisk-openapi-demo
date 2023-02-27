@@ -1,6 +1,7 @@
 package com.netease.irisk.openapi.demo.util;
 
 import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.UnsupportedEncodingException;
