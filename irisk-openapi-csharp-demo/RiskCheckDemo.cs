@@ -32,7 +32,7 @@ namespace Com.Netease.Is.Irisk.Demo
             parameters.Add("timestamp", timestamp);
             parameters.Add("nonce", nonce);
             // 风控SDK上报的数据后回参获取到的 token，应用方需要从智能风控客户端SDK获取该数据。详情请查看客户端接入文档。
-            parameters.Add("token", "phyZwZcJ/jlBXEBQVUPEaCbAE65qqlfh");
+            parameters.Add("token", "your_token");
             // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
             parameters.Add("ip", "183.136.182.141");
             // 生成签名信息，使用secretKey签名的数据，校验权限

@@ -9,8 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author dongyisheng@corp.netease.com
- * @date 2023/2/16 15:34
+ * 本接口通过AI算法对上报的图片进行分析，识别是否存在外挂行为。
  */
 public class RiskMediaCheckDemo {
 
@@ -57,9 +56,9 @@ public class RiskMediaCheckDemo {
         params.put("timestamp", timeStamp);
         params.put("version", VERSION);
         // 文件数据
-        params.put("mediaData", "test");
+        params.put("mediaData", "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=");
         // 文件名称
-        params.put("mediaName", "test");
+        params.put("mediaName", "xxx.jpg");
         // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
         params.put("ip", "183.136.182.141");
         // 用户/玩家的角色 ID，非游戏类型应用，roleId 可以与 roleAccount 相同

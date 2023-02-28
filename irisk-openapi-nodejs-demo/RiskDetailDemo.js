@@ -8,7 +8,7 @@ var businessId = "ff1c6edcdec98a00d3eddc763c52d1e2";
 // 版本号，如400
 var version = "400";
 // 本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。
-var apiurl = "http://localhost:28082/v5/risk/detail";
+var apiurl = "http://ir-open.dun.163.com/v5/risk/detail";
 //请求参数
 var post_data = {
     // 设置用于计算签名的参数

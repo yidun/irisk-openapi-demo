@@ -1,5 +1,5 @@
 <?php
-/** 反外挂嫌疑在线检测接口API示例 */
+/** 本接口通过AI算法对上报的图片进行分析，识别是否存在外挂行为。 */
 /** 产品ID，从【易盾官网-服务管理-已开通业务】页面获取 */
 const SECRET_ID = "your_secret_id";
 /** 密钥，从【易盾官网-服务管理-已开通业务】页面获取 */
@@ -25,9 +25,9 @@ function check($params)
     // 随机码 32位
     $params["nonce"] = "mmm888f73yyy59440583zzz9bfcc79de";
     // 文件数据
-    $params["mediaData"] = "test";
+    $params["mediaData"] = "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=";
     // 文件名称
-    $params["mediaName"] = "test";
+    $params["mediaName"] = "xxx.jpg";
     // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
     $params["ip"] = "183.136.182.141";
     // 用户/玩家的角色 ID，非游戏类型应用，roleId 可以与 roleAccount 相同
