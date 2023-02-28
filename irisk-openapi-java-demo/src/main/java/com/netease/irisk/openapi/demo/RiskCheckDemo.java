@@ -57,7 +57,7 @@ public class RiskCheckDemo {
         params.put("timestamp", timeStamp);
         params.put("version", VERSION);
         // 风控SDK上报的数据后回参获取到的 token，应用方需要从智能风控客户端SDK获取该数据。详情请查看客户端接入文档。
-        params.put("token", "phyZwZcJ/jlBXEBQVUPEaCbAE65qqlfh");
+        params.put("token", "your_token");
         // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
         params.put("ip", "183.136.182.141");
         // 用户/玩家的角色 ID，非游戏类型应用，roleId 可以与 roleAccount 相同

@@ -8,7 +8,7 @@ var businessId = "ff1c6edcdec98a00d3eddc763c52d1e2";
 // 版本号，如400
 var version = "400";
 // 本接口用于透传使用，获取sdk所需的配置参数以及特征配置等信息。
-var apiurl = "http://localhost:28082/v5/risk/getConfig";
+var apiurl = "http://ir-open.dun.163.com/v5/risk/getConfig";
 //请求参数
 var post_data = {
     // 设置用于计算签名的参数

@@ -8,7 +8,7 @@ var businessId = "ff1c6edcdec98a00d3eddc763c52d1e2";
 // 版本号，如400
 var version = "400";
 // 本接口用于智能风控检测结果数据在线查询（唯有调用此接口后，才会对上报数据进行检测并获取命中结果。)
-var apiurl = "http://localhost:28082/v5/risk/check";
+var apiurl = "http://ir-open.dun.163.com/v5/risk/check";
 //请求参数
 var post_data = {
     // 设置用于计算签名的参数
@@ -18,7 +18,7 @@ var post_data = {
     timestamp: new Date().getTime(),
     nonce: "mmm888f73yyy59440583zzz9bfcc79de",
     // 风控SDK上报的数据后回参获取到的 token，应用方需要从智能风控客户端SDK获取该数据。详情请查看客户端接入文档。
-    token: "phyZwZcJ/jlBXEBQVUPEaCbAE65qqlfh",
+    token: "your_token",
     // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
     ip: "1.1.1.1",
     roleId: "yyyyyyy",

@@ -15,8 +15,7 @@ import (
 )
 
 /**
- * 本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。
- * 例如，每次查询1分钟前的数据，时间跨度也是1分钟，则可以按1分钟时间窗口，周期性滑动拉取数据。
+ * 本接口通过AI算法对上报的图片进行分析，识别是否存在外挂行为。
  */
 
 const (
@@ -71,9 +70,9 @@ func main() {
 		"timestamp":  strconv.FormatInt(time.Now().UnixNano()/1000000, 10),
 		"nonce":      "mmm888f73yyy59440583zzz9bfcc79de",
 		// 文件数据
-		"mediaData": "test",
+		"mediaData": "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=",
 		// 文件名称
-		"mediaName": "test",
+		"mediaName": "xxx.jpg",
 		// 用户/玩家的角色ID
 		"roleId": "yyyyyyy",
 		// 用户/玩家的角色名称，非游戏类型应用，nickname 可以是当前用户昵称相同

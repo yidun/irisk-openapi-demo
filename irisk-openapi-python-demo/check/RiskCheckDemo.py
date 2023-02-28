@@ -66,7 +66,7 @@ if __name__ == "__main__":
     params = {
         # 更多参数见官方文档
         # 风控SDK上报的数据后回参获取到的 token，应用方需要从智能风控客户端SDK获取该数据。详情请查看客户端接入文档。
-        "token": "phyZwZcJ/jlBXEBQVUPEaCbAE65qqlfh",
+        "token": "your_token",
         # 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
         "ip": "1.1.1.1",
         # 用户/玩家的角色 ID，非游戏类型应用，roleId 可以与 roleAccount 相同

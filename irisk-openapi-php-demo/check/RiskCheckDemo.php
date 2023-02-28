@@ -1,5 +1,5 @@
 <?php
-/** 反外挂嫌疑在线检测接口API示例 */
+/** 本接口用于智能风控检测结果数据在线查询（唯有调用此接口后，才会对上报数据进行检测并获取命中结果。) */
 /** 产品ID，从【易盾官网-服务管理-已开通业务】页面获取 */
 const SECRET_ID = "your_secret_id";
 /** 密钥，从【易盾官网-服务管理-已开通业务】页面获取 */
@@ -13,7 +13,7 @@ const API_TIMEOUT = 5;
 require("../util.php");
 
 /**
- * 反外挂请求接口简单封装
+ * 智能风控请求接口简单封装
  * $params 请求参数
  */
 function check($params)
@@ -25,7 +25,7 @@ function check($params)
     // 随机码 32位
     $params["nonce"] = "mmm888f73yyy59440583zzz9bfcc79de";
     // 风控SDK上报的数据后回参获取到的 token，应用方需要从智能风控客户端SDK获取该数据。详情请查看客户端接入文档。
-    $params["token"] = "phyZwZcJ/jlBXEBQVUPEaCbAE65qqlfh";
+    $params["token"] = "your_token";
     // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
     $params["ip"] = "183.136.182.141";
     // 用户/玩家的角色 ID，非游戏类型应用，roleId 可以与 roleAccount 相同

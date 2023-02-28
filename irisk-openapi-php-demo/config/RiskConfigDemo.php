@@ -1,5 +1,5 @@
 <?php
-/** 反外挂嫌疑在线检测接口API示例 */
+/** 本接口用于透传使用，获取sdk所需的配置参数以及特征配置等信息。 */
 /** 产品ID，从【易盾官网-服务管理-已开通业务】页面获取 */
 const SECRET_ID = "your_secret_id";
 /** 密钥，从【易盾官网-服务管理-已开通业务】页面获取 */
@@ -13,7 +13,7 @@ const API_TIMEOUT = 2;
 require("../util.php");
 
 /**
- * 反外挂请求接口简单封装
+ * 智能风控请求接口简单封装
  * $params 请求参数
  */
 function check($params)

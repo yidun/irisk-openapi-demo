@@ -65,13 +65,13 @@ if __name__ == "__main__":
 
     params = {
         # 文件数据
-        "mediaData": 1667959831798,
+        "mediaData": "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=",
         # 文件名称
-        "mediaName": 1667959915103,
+        "mediaName": "xxx.jpg",
         # 用户/玩家的角色ID
         "roleId": "yyyyyyy",
         # 用户/玩家的角色名称，非游戏类型应用，nickname 可以是当前用户昵称相同
-        "nickname": 10,
+        "nickname": "yyyyyyy",
         # 用户/玩家的角色的服务器名称
         "server": "com.aaa.bbb",
         # ip地址

@@ -7,8 +7,8 @@ var secretKey = "accd3781b86e95d8a84c81b2c62e9e71";
 var businessId = "ff1c6edcdec98a00d3eddc763c52d1e2";
 // 版本号，如400
 var version = "400";
-// 本接口用于智能风控检测结果数据在线查询（唯有调用此接口后，才会对上报数据进行检测并获取命中结果。)
-var apiurl = "http://localhost:28082/v5/risk/mediaCheck";
+// 本接口通过AI算法对上报的图片进行分析，识别是否存在外挂行为。
+var apiurl = "http://ir-open.dun.163.com/v5/risk/mediaCheck";
 //请求参数
 var post_data = {
     // 设置用于计算签名的参数
@@ -18,9 +18,9 @@ var post_data = {
     timestamp: new Date().getTime(),
     nonce: "mmm888f73yyy59440583zzz9bfcc79de",
     // 文件数据
-    mediaData: "test",
+    mediaData: "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=",
     // 文件名称
-    mediaName: "test",
+    mediaName: "xxx.jpg",
     // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
     ip: "1.1.1.1",
     roleId: "yyyyyyy",

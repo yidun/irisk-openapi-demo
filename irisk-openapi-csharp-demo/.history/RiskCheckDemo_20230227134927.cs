@@ -18,7 +18,7 @@ namespace Com.Netease.Is.Irisk.Demo
             // 版本号，如400
             String version = "400";
             // 接口URL
-            String apiUrl = "http://localhost:28082/v5/risk/check";
+            String apiUrl = "http://ir-open.dun.163.com/v5/risk/check";
             // 随机码，32位
             String nonce = "BWJOGAEbplxiaFxSsSV4nzdeznJJWfk7";
 

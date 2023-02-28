@@ -32,9 +32,9 @@ namespace Com.Netease.Is.Irisk.Demo
             parameters.Add("timestamp", timestamp);
             parameters.Add("nonce", nonce);
             // 文件数据
-            parameters.Add("mediaData", "your_token");
+            parameters.Add("mediaData", "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=");
             // 文件名称
-            parameters.Add("mediaName", "your_token");
+            parameters.Add("mediaName", "xxx.jpg");
             // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
             parameters.Add("ip", "183.136.182.141");
             // 生成签名信息，使用secretKey签名的数据，校验权限
