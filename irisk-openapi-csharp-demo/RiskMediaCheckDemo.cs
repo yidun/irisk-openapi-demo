@@ -2,13 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-// 本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。
-// 例如，每次查询1分钟前的数据，时间跨度也是1分钟，则可以按1分钟时间窗口，周期性滑动拉取数据。
+// 本接口通过AI算法对上报的图片进行分析，识别是否存在外挂行为。
 namespace Com.Netease.Is.Irisk.Demo
 {
-    class RiskDetailDemo
+    class RiskMediaCheckDemo
     {
-        public static void riskDetail()
+        public static void riskCheck()
         {
             // 产品id，每个应用接入时，会分配secretId和私钥secretKey。
             String secretId = "your_secret_id";
@@ -19,7 +18,7 @@ namespace Com.Netease.Is.Irisk.Demo
             // 版本号，如400
             String version = "400";
             // 接口URL
-            String apiUrl = "https://ir-open.dun.163.com/v5/risk/detail";
+            String apiUrl = "http://ir-open.dun.163.com/v5/risk/mediaCheck";
             // 随机码，32位
             String nonce = "BWJOGAEbplxiaFxSsSV4nzdeznJJWfk7";
 
@@ -32,24 +31,20 @@ namespace Com.Netease.Is.Irisk.Demo
             parameters.Add("version", version);
             parameters.Add("timestamp", timestamp);
             parameters.Add("nonce", nonce);
-            
-            // 设置私有参数
-            parameters.Add("beginTimestamp", "1667959831798");
-            parameters.Add("endTimestamp", "1667959915103");
-            // 用于分页查询的关联标记
-            parameters.Add("startFlag", "");
-            // 用户/玩家的账号
-            parameters.Add("account", "zzzzzzz");
-            // 用户/玩家的角色ID
-            parameters.Add("roleId", "yyyyyyy");
-            // 风险等级, 1-低风险, 2-中风险, 3-高风险
-            parameters.Add("riskLevel", "10");
-            // 包名(仅限Android/iOS平台)
-            parameters.Add("packageName", "com.aaa.bbb");
-            // app版本(仅限Android/iOS平台)
-            parameters.Add("appVersion", "1.0.2");
-            parameters.Add("ip", "192.168.1.1");
+            // 图片数据，图片支持编码为BASE64的数据，无需包含base64编码请求头部分
+            parameters.Add("mediaData", "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=");
+            // 图片文件名，格式如xxx.jpg，需要包含.格式的文件后缀名
+            parameters.Add("mediaName", "xxx.jpg");
+            // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
+            parameters.Add("ip", "183.136.182.141");
             // 生成签名信息，使用secretKey签名的数据，校验权限
+            // 设置私有参数
+            // 用户/玩家的角色 ID，非游戏类型应用，roleId 可以与 roleAccount 相同
+            parameters.Add("roleId", "yyyyyyy");
+            // 用户/玩家的角色名称，非游戏类型应用，roleName 可以是当前用户昵称相同
+            parameters.Add("nickname", "yyyyyyy");
+            // 用户/玩家的角色的服务器名称
+            parameters.Add("server", "yyyyyyy");
             String signature = Utils.genSignature(secretKey, parameters);
             parameters.Add("signature", signature);
             // 发送HTTP请求
