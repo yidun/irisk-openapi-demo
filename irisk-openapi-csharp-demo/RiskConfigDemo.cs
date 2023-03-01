@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-// See https://aka.ms/new-console-template for more information
+// 当客户端出现风控SDK接口被屏蔽，获取不到业务配置信息时（如初始化功能配置、特征配置等），可通过此接口获取业务配置信息，并下发到客户端完成配置。
 namespace Com.Netease.Is.Irisk.Demo
 {
     class RiskConfigDemo

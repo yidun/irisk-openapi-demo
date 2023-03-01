@@ -67,9 +67,9 @@ public class RiskDetailDemo {
         params.put("roleId", "yyyyyyy");
         // 风险等级, 10-高风险, 20-中风险, 30-低风险
         params.put("riskLevel", 10);
-        // 包名
+        // 包名(仅限Android/iOS平台)
         params.put("packageName", "com.aaa.bbb");
-        // app版本
+        // app版本(仅限Android/iOS平台)
         params.put("appVersion", "1.0.2");
         params.put("ip", "192.168.1.1");
         // 使用secretKey签名的数据，校验权限

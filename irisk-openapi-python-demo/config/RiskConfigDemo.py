@@ -5,7 +5,7 @@ import json
 
 
 class RiskConfigDemo(object):
-    """本接口用于透传使用，获取sdk所需的配置参数以及特征配置等信息。"""
+    """当客户端出现风控SDK接口被屏蔽，获取不到业务配置信息时（如初始化功能配置、特征配置等），可通过此接口获取业务配置信息，并下发到客户端完成配置。"""
 
     API_URL = "http://ir-open.dun.163.com/v5/risk/getConfig"
 

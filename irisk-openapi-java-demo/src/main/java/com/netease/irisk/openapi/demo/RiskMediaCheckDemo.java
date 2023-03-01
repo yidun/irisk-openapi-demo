@@ -55,9 +55,9 @@ public class RiskMediaCheckDemo {
         params.put("nonce", NONCE);
         params.put("timestamp", timeStamp);
         params.put("version", VERSION);
-        // 文件数据
+        // 图片数据，图片支持编码为BASE64的数据，无需包含base64编码请求头部分
         params.put("mediaData", "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=");
-        // 文件名称
+        // 图片文件名，格式如xxx.jpg，需要包含.格式的文件后缀名
         params.put("mediaName", "xxx.jpg");
         // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
         params.put("ip", "183.136.182.141");

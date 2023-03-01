@@ -5,7 +5,7 @@ import json
 
 
 class RiskMediaCheckDemo(object):
-    """本接口的功能是智能风控图像外挂识别。"""
+    """本接口通过AI算法对上报的图片进行分析，识别是否存在外挂行为。"""
 
     API_URL = "http://ir-open.dun.163.com/v5/risk/mediaCheck"
 
@@ -64,9 +64,9 @@ if __name__ == "__main__":
     api = RiskMediaCheckDemo(SECRET_ID, SECRET_KEY, BUSINESS_ID, VERSION)
 
     params = {
-        # 文件数据
+        # 图片数据，图片支持编码为BASE64的数据，无需包含base64编码请求头部分
         "mediaData": "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=",
-        # 文件名称
+        # 图片文件名，格式如xxx.jpg，需要包含.格式的文件后缀名
         "mediaName": "xxx.jpg",
         # 用户/玩家的角色ID
         "roleId": "yyyyyyy",
@@ -74,7 +74,7 @@ if __name__ == "__main__":
         "nickname": "yyyyyyy",
         # 用户/玩家的角色的服务器名称
         "server": "com.aaa.bbb",
-        # ip地址
+        # 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
         "ip": "192.168.1.1"
     }
 
