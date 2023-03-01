@@ -4,10 +4,10 @@ import urllib.request as urlrequest
 import json
 
 
-class PcRiskCheckDemo(object):
+class RiskCheckDemo(object):
     """本接口用于智能风控检测结果数据在线查询（唯有调用此接口后，才会对上报数据进行检测并获取命中结果。)"""
 
-    API_URL = "http://ir-open.dun.163.com/v4/pc/check"
+    API_URL = "http://ir-open.dun.163.com/v4/risk/check"
 
     def __init__(self, secret_id, secret_key, business_id, version):
         """
@@ -69,11 +69,11 @@ class PcRiskCheckDemo(object):
 
 if __name__ == "__main__":
     """示例代码入口"""
-    SECRET_ID = "your_secret_id"
-    SECRET_KEY = "your_secret_key"
+    SECRET_ID = "your_secretk_id"
+    SECRET_KEY = "your_secretk_key"
     BUSINESS_ID = "your_business_id"
     VERSION = "400"
-    api = PcRiskCheckDemo(SECRET_ID, SECRET_KEY, BUSINESS_ID, VERSION)
+    api = MobileRiskCheckDemo(SECRET_ID, SECRET_KEY, BUSINESS_ID, VERSION)
 
     params = {
         # 更多参数见官方文档

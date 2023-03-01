@@ -7,10 +7,10 @@ const SECRET_KEY = "your_secretk_key";
 const BUSINESS_ID = "your_business_id";
 const VERSION = "400";
 /** 接口URL */
-const API_URL = "http://ir-open.dun.163.com/v4/web/check";
+const API_URL = "http://ir-open.dun.163.com/v4/risk/check";
 /** API timeout*/
 const API_TIMEOUT = 2;
-require("../../util.php");
+require("../util.php");
 
 /**
  * 反外挂请求接口简单封装

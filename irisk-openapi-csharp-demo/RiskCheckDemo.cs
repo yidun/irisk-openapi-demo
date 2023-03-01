@@ -5,7 +5,7 @@ using System.Net.Http;
 // See https://aka.ms/new-console-template for more information
 namespace Com.Netease.Is.Irisk.Demo
 {
-    class MobileRiskCheckDemo
+    class RiskCheckDemo
     {
         public static void riskCheck()
         {
