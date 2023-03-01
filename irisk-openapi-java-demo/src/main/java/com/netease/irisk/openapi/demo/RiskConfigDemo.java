@@ -9,8 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 本接口用于透传使用，获取sdk所需的配置参数以及特征配置等信息。
- * 游戏反外挂场景下，getConfig 调用由 SDK 自动完成。
+ * 当客户端出现风控SDK接口被屏蔽，获取不到业务配置信息时（如初始化功能配置、特征配置等），可通过此接口获取业务配置信息，并下发到客户端完成配置。
  */
 public class RiskConfigDemo {
 

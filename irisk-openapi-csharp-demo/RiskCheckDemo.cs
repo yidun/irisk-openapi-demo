@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-// See https://aka.ms/new-console-template for more information
+// 本接口用于智能风控嫌疑数据在线检测，并且接口会同步返回检测结果。
 namespace Com.Netease.Is.Irisk.Demo
 {
     class RiskCheckDemo
@@ -53,13 +53,18 @@ namespace Com.Netease.Is.Irisk.Demo
             parameters.Add("assetVersion", "assetVersion");
             // 额外/拓展的信息，应用 / 游戏方可以自己构建json结构，最大长度：2048。不同场景构建信息见分场景接入说明
             parameters.Add("extData", "");
-            // 代表活动目标
+            // 活动操作的目标，比如：A给B点赞，则target为B。如果target是手机号或邮箱，请提供hash值，hash算法：md5(target)。如没有，可传空
             parameters.Add("target", "");
-            // 代表活动标识
+            // 活动的唯一标识，用于标记场景下的细分类别，如：注册-自主注册、注册-受邀请注册；再如：登录- app登录、登录-web登录等
             parameters.Add("activityId", "");
+            // 用户用于登录的手机号码或者关联的手机号码，默认国内手机号。如有海外手机，需包含国家地区代码，
+            // 格式为“+447410xxx186（+44即为国家码）”。如果需要加密，支持传入hash值，hash算法：md5(phone)
             parameters.Add("phone", "");
+            // 用户的邮箱，如果需要加密，支持传入hash值，hash算法：md5(email)
             parameters.Add("email", "");
+            // 用户的注册IP
             parameters.Add("registerIp", "");
+            // 用户的注册时间，单位：毫秒
             parameters.Add("registerTime", timestamp);
             String signature = Utils.genSignature(secretKey, parameters);
             parameters.Add("signature", signature);

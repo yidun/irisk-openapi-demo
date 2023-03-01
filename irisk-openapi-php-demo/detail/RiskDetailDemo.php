@@ -1,5 +1,8 @@
 <?php
-/** 本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。 */
+/**
+ * 本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。
+ * 例如，每次查询1分钟前的数据，时间跨度也是1分钟，则可以按1分钟时间窗口，周期性滑动拉取数据。
+ */
 /** 产品ID，从【易盾官网-服务管理-已开通业务】页面获取 */
 const SECRET_ID = "your_secret_id";
 /** 密钥，从【易盾官网-服务管理-已开通业务】页面获取 */
@@ -34,9 +37,9 @@ function check($params)
     $params["roleId"] = "yyyyyyy";
     // 风险等级, 10-高风险, 20-中风险, 30-低风险
     $params["riskLevel"] = "10";
-    // 包名
+    // 包名(仅限Android/iOS平台)
     $params["packageName"] = "com.aaa.bbb";
-    // app版本
+    // app版本(仅限Android/iOS平台)
     $params["appVersion"] = "1.0.2";
     $params["ip"] = "192.168.1.1";
     $params["signature"] = gen_signature(SECRET_KEY, $params);

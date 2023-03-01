@@ -69,9 +69,9 @@ func main() {
 		"version":    version,
 		"timestamp":  strconv.FormatInt(time.Now().UnixNano()/1000000, 10),
 		"nonce":      "mmm888f73yyy59440583zzz9bfcc79de",
-		// 文件数据
+		// 图片数据，图片支持编码为BASE64的数据，无需包含base64编码请求头部分
 		"mediaData": "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=",
-		// 文件名称
+		// 图片文件名，格式如xxx.jpg，需要包含.格式的文件后缀名
 		"mediaName": "xxx.jpg",
 		// 用户/玩家的角色ID
 		"roleId": "yyyyyyy",

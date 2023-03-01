@@ -2,7 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-// See https://aka.ms/new-console-template for more information
+// 本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。
+// 例如，每次查询1分钟前的数据，时间跨度也是1分钟，则可以按1分钟时间窗口，周期性滑动拉取数据。
 namespace Com.Netease.Is.Irisk.Demo
 {
     class RiskDetailDemo
@@ -43,9 +44,9 @@ namespace Com.Netease.Is.Irisk.Demo
             parameters.Add("roleId", "yyyyyyy");
             // 风险等级, 1-低风险, 2-中风险, 3-高风险
             parameters.Add("riskLevel", "10");
-            // 包名
+            // 包名(仅限Android/iOS平台)
             parameters.Add("packageName", "com.aaa.bbb");
-            // app版本
+            // app版本(仅限Android/iOS平台)
             parameters.Add("appVersion", "1.0.2");
             parameters.Add("ip", "192.168.1.1");
             // 生成签名信息，使用secretKey签名的数据，校验权限

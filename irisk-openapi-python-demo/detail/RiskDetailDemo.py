@@ -5,7 +5,8 @@ import json
 
 
 class RiskCheckDemo(object):
-    """本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。"""
+    """本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。
+       例如，每次查询1分钟前的数据，时间跨度也是1分钟，则可以按1分钟时间窗口，周期性滑动拉取数据。"""
 
     API_URL = "http://ir-open.dun.163.com/v5/risk/detail"
 
@@ -74,11 +75,11 @@ if __name__ == "__main__":
         "roleId": "yyyyyyy",
         # 风险等级, 1-低风险, 2-中风险, 3-高风险
         "riskLevel": 1,
-        # 包名
+        # 包名(仅限Android/iOS平台)
         "packageName": "com.aaa.bbb",
-        # app版本
+        # app版本(仅限Android/iOS平台)
         "appVersion": "1.0.2",
-        # ip地址
+        # 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
         "ip": "192.168.1.1"
     }
 

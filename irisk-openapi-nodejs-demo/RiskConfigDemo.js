@@ -7,7 +7,7 @@ var secretKey = "accd3781b86e95d8a84c81b2c62e9e71";
 var businessId = "ff1c6edcdec98a00d3eddc763c52d1e2";
 // 版本号，如400
 var version = "400";
-// 本接口用于透传使用，获取sdk所需的配置参数以及特征配置等信息。
+// 当客户端出现风控SDK接口被屏蔽，获取不到业务配置信息时（如初始化功能配置、特征配置等），可通过此接口获取业务配置信息，并下发到客户端完成配置。
 var apiurl = "http://ir-open.dun.163.com/v5/risk/getConfig";
 //请求参数
 var post_data = {

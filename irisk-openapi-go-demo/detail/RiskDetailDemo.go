@@ -81,9 +81,9 @@ func main() {
 		"roleId": "yyyyyyy",
 		// 风险等级, 1-低风险, 2-中风险, 3-高风险
 		"riskLevel": "1",
-		// 包名
+		// 包名(仅限Android/iOS平台)
 		"packageName": "com.aaa.bbb",
-		// app版本号
+		// app版本(仅限Android/iOS平台)
 		"appVersion": "1.0.2",
 		"ip":         "192.168.1.1",
 	}
