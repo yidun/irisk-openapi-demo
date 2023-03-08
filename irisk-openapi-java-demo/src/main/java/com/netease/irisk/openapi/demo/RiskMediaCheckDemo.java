@@ -22,8 +22,8 @@ public class RiskMediaCheckDemo {
     // 每个业务接入时，均会分配业务 ID
     private static final String BUSINESS_ID = "your_business_id";
 
-    // 版本号，如400
-    private static final String VERSION = "400";
+    // 版本号，如500
+    private static final String VERSION = "500";
 
     // 接口URL
     private static final String API_URL = "http://ir-open.dun.163.com/v5/risk/mediaCheck";

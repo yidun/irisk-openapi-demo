@@ -5,8 +5,8 @@ var secretId = "1ded450ce116bcffd62e603c99ee7834";
 var secretKey = "accd3781b86e95d8a84c81b2c62e9e71";
 // 每个业务接入时，均会分配业务 ID
 var businessId = "ff1c6edcdec98a00d3eddc763c52d1e2";
-// 版本号，如400
-var version = "400";
+// 版本号，如500
+var version = "500";
 // 当客户端出现风控SDK接口被屏蔽，获取不到业务配置信息时（如初始化功能配置、特征配置等），可通过此接口获取业务配置信息，并下发到客户端完成配置。
 var apiurl = "http://ir-open.dun.163.com/v5/risk/getConfig";
 //请求参数

@@ -23,7 +23,7 @@ const (
 	secretId   = "your_secret_id"                               //产品id，每个应用接入时，会分配secretId和私钥secretKey。
 	secretKey  = "your_secret_key"                              //产品密钥，每个应用接入时，会分配secretId和私钥secretKey。
 	businessId = "your_business_id"                             //每个业务接入时，均会分配业务 ID，有对应的密钥 secretId。
-	version    = "400"                                          //版本号，如400
+	version    = "500"                                          //版本号，如500
 )
 
 // 请求易盾接口
