@@ -5,8 +5,8 @@ var secretId = "1ded450ce116bcffd62e603c99ee7834";
 var secretKey = "accd3781b86e95d8a84c81b2c62e9e71";
 // 每个业务接入时，均会分配业务 ID
 var businessId = "ff1c6edcdec98a00d3eddc763c52d1e2";
-// 版本号，如400
-var version = "400";
+// 版本号，如500
+var version = "500";
 // 本接口用于智能风控嫌疑数据在线检测，并且接口会同步返回检测结果。
 var apiurl = "http://ir-open.dun.163.com/v5/risk/check";
 //请求参数
