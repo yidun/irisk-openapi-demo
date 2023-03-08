@@ -5,8 +5,8 @@ var secretId = "1ded450ce116bcffd62e603c99ee7834";
 var secretKey = "accd3781b86e95d8a84c81b2c62e9e71";
 // 每个业务接入时，均会分配业务 ID
 var businessId = "ff1c6edcdec98a00d3eddc763c52d1e2";
-// 版本号，如400
-var version = "400";
+// 版本号，如500
+var version = "500";
 // 本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。
 // 例如，每次查询1分钟前的数据，时间跨度也是1分钟，则可以按1分钟时间窗口，周期性滑动拉取数据。
 var apiurl = "http://ir-open.dun.163.com/v5/risk/detail";

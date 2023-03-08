@@ -15,8 +15,8 @@ namespace Com.Netease.Is.Irisk.Demo
             String secretKey = "your_secret_key";
             // 每个业务接入时，均会分配业务 ID，有对应的密钥 secretId。
             String businessId = "your_business_id";
-            // 版本号，如400
-            String version = "400";
+            // 版本号，如500
+            String version = "500";
             // 接口URL
             String apiUrl = "http://ir-open.dun.163.com/v5/risk/mediaCheck";
             // 随机码，32位

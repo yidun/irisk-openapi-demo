@@ -16,7 +16,7 @@ class RiskCheckDemo(object):
             secret_id (str) 产品id，每个应用接入时，会分配secretId和私钥secretKey。
             secret_key (str) 产品密钥，每个应用接入时，会分配secretId和私钥secretKey。
             business_id (str) 每个业务接入时，均会分配业务 ID
-            version (str) 版本号，如400
+            version (str) 版本号，如500
         """
         self.secret_id = secret_id
         self.secret_key = secret_key
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     SECRET_ID = "your_secret_id"
     SECRET_KEY = "your_secret_key"
     BUSINESS_ID = "your_business_id"
-    VERSION = "400"
+    VERSION = "500"
     api = RiskCheckDemo(SECRET_ID, SECRET_KEY, BUSINESS_ID, VERSION)
 
     params = {

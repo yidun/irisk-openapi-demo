@@ -8,7 +8,7 @@ const SECRET_ID = "your_secret_id";
 /** 密钥，从【易盾官网-服务管理-已开通业务】页面获取 */
 const SECRET_KEY = "your_secret_key";
 const BUSINESS_ID = "your_business_id";
-const VERSION = "400";
+const VERSION = "500";
 /** 接口URL */
 const API_URL = "http://ir-open.dun.163.com/v5/risk/detail";
 /** API timeout*/
