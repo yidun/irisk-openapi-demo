@@ -49,7 +49,7 @@ var post_data = {
     // 用户的注册IP
     registerIp: "",
     // 用户的注册时间，单位：毫秒
-    registerTime: "",
+    registerTime: new Date().getTime(),
 }
 var signature = utils.genSignature(secretKey, post_data);
 post_data.signature = signature;
