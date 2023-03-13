@@ -5,48 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="744ac98e-70ad-45d5-80bd-548c76edaf87" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/Program_20230221112419.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/Program_20230227134550.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskCheckDemo_20230223170255.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskCheckDemo_20230227134122.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskCheckDemo_20230227134554.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskCheckDemo_20230227134637.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskCheckDemo_20230227134728.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskCheckDemo_20230227134927.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskCheckDemo_20230227135125.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskCheckDemo_20230227140519.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskCheckDemo_20230227140650.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskConfigDemo_20230221112419.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskConfigDemo_20230227134140.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskConfigDemo_20230227134554.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskDetailDemo_20230221112419.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskDetailDemo_20230227134222.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskDetailDemo_20230227134244.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskMediaCheckDemo_20230227134253.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskMediaCheckDemo_20230227134331.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskMediaCheckDemo_20230227134433.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskMediaCheckDemo_20230227134536.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/.history/RiskMediaCheckDemo_20230227140626.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskCheckDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskCheckDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskConfigDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskConfigDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskMediaCheckDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-csharp-demo/RiskMediaCheckDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-go-demo/check/RiskCheckDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-go-demo/check/RiskCheckDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-go-demo/config/RiskConfigDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-go-demo/config/RiskConfigDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-go-demo/media/RiskMediaCheckDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-go-demo/media/RiskMediaCheckDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/RiskCheckDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/RiskCheckDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/RiskConfigDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/RiskConfigDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/RiskMediaCheckDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netease/irisk/openapi/demo/RiskMediaCheckDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-nodejs-demo/RiskCheckDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-nodejs-demo/RiskCheckDemo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-nodejs-demo/RiskConfigDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-nodejs-demo/RiskConfigDemo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-nodejs-demo/RiskMediaCheckDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-nodejs-demo/RiskMediaCheckDemo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/check/RiskCheckDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-php-demo/check/RiskCheckDemo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/config/RiskConfigDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-php-demo/config/RiskConfigDemo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/media/RiskMediaCheckDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-php-demo/media/RiskMediaCheckDemo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../irisk-openapi-python-demo/check/RiskCheckDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-python-demo/check/RiskCheckDemo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-python-demo/config/RiskConfigDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-python-demo/config/RiskConfigDemo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-python-demo/detail/RiskDetailDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-python-demo/detail/RiskDetailDemo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../irisk-openapi-python-demo/media/RiskMediaCheckDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-python-demo/media/RiskMediaCheckDemo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
