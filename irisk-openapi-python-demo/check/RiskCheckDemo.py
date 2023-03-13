@@ -97,7 +97,7 @@ if __name__ == "__main__":
         # 用户的注册IP
         "registerIp": "",
         # 用户的注册时间，单位：毫秒
-        "registerTime": ""
+        "registerTime": int(time.time() * 1000)
     }
 
     ret = api.check(params)
