@@ -4,9 +4,15 @@ import com.alibaba.fastjson.JSONObject;
 import com.netease.irisk.openapi.demo.util.HttpUtil;
 import com.netease.irisk.openapi.demo.util.SignatureUtils;
 
-import java.io.UnsupportedEncodingException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 /**
  * 本接口通过AI算法对上报的图片进行分析，识别是否存在外挂行为。
@@ -46,7 +52,7 @@ public class RiskMediaCheckDemo {
         }
     }
 
-    private static Map<String, Object> getParams() throws UnsupportedEncodingException {
+    private static Map<String, Object> getParams() throws IOException {
         Map<String, Object> params = new HashMap<>();
         // 调用接口当前时间，单位毫秒
         Long timeStamp = System.currentTimeMillis();
@@ -56,7 +62,9 @@ public class RiskMediaCheckDemo {
         params.put("timestamp", timeStamp);
         params.put("version", VERSION);
         // 图片数据，图片支持编码为BASE64的数据，无需包含base64编码请求头部分
-        params.put("mediaData", "auMW9NLW5rNaa6vXVpq2jTfy1Kemr2UuWyvu9L7662dvL7Oik3cp5J5PJ/dr35/56UrrvP5ML+X/pJ//9k=");
+        String filePath = "your_img_path";
+        String mediaData = imgEncode(filePath);
+        params.put("mediaData", mediaData);
         // 图片文件名，格式如xxx.jpg，需要包含.格式的文件后缀名
         params.put("mediaName", "xxx.jpg");
         // 用户/ 玩家的IP，或当前客户端业务事件发生时的公网IP地址（ipv4）
@@ -72,6 +80,41 @@ public class RiskMediaCheckDemo {
         String signature = SignatureUtils.genSignature(SECRET_KEY, params);
         params.put("signature", signature);
         return params;
+    }
+
+    /**
+     * 根据图片路径进行base64编码
+     * @param filePath
+     * @return
+     * @throws IOException
+     */
+    private static String imgEncode(String filePath) throws IOException {
+        byte[] fileBytes = Files.readAllBytes(Paths.get(filePath));
+        return Base64.getEncoder().encodeToString(fileBytes);
+    }
+
+    /**
+     * 从文件中读取字符串
+     * @param filePath
+     * @return
+     * @throws FileNotFoundException
+     */
+    private static String getStringFromFile(String filePath) throws FileNotFoundException {
+        // 创建一个File对象，表示要读取的文件
+        File file = new File(filePath);
+
+        // 创建一个Scanner对象，关联到文件
+        Scanner scanner = new Scanner(file);
+        StringBuilder sb = new StringBuilder();
+
+        // 逐行读取文件中的字符串数据，直到文件结束
+        while (scanner.hasNextLine()) {
+            String line = scanner.nextLine();
+            sb.append(line);
+        }
+        // 关闭Scanner对象
+        scanner.close();
+        return sb.toString();
     }
 
 }
