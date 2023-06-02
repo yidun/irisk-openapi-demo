@@ -54,9 +54,9 @@ function check($params)
     // 用户的邮箱，如果需要加密，支持传入hash值，hash算法：md5(email)
     $params["email"] = "";
     // 用户的注册IP
-    $params["registerIp"] = time() * 1000;
+    $params["registerIp"] = "";
     // 用户的注册时间，单位：毫秒
-    $params["registerTime"] = "";
+    $params["registerTime"] = time() * 1000;
     $params["signature"] = gen_signature(SECRET_KEY, $params);
     $params = toUtf8($params);
 
