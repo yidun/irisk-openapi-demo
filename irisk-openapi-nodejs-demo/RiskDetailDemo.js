@@ -1,10 +1,10 @@
 var utils = require("./utils");
 // 产品id，每个应用接入时，会分配secretId和私钥secretKey。
-var secretId = "1ded450ce116bcffd62e603c99ee7834";
+var secretId = "your_secret_id";
 // 产品密钥，每个应用接入时，会分配secretId和私钥secretKey。
-var secretKey = "accd3781b86e95d8a84c81b2c62e9e71";
+var secretKey = "your_secret_key";
 // 每个业务接入时，均会分配业务 ID
-var businessId = "ff1c6edcdec98a00d3eddc763c52d1e2";
+var businessId = "your_business_id";
 // 版本号，如500
 var version = "500";
 // 本接口的功能是智能风控明细数据查询，主要用于数据同步：从易盾拉取数据场景，以固定时间窗口拉取数据。
