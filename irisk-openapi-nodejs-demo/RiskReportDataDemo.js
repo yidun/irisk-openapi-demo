@@ -7,9 +7,25 @@ var secretKey = "your_secret_key";
 var businessId = "your_business_id";
 // 版本号，如500
 var version = "500";
-// 当客户端出现风控SDK接口被屏蔽，获取不到业务配置信息时（如初始化功能配置、特征配置等），可通过此接口获取业务配置信息，并下发到客户端完成配置。
-var apiurl = "http://ir-open.dun.163.com/v5/risk/getConfig";
+// 本接口用于上报应用的举报信息。
+var apiurl = "http://ir-open.dun.163.com/v5/risk/reportData";
 //请求参数
+var whistleblowerMap = {
+    account: 'account01',
+    roleId: 'roleId01',
+    roleName: 'roleName01',
+    serverId: 'serverId01',
+    level: '10',
+    recharge: '9999'
+}
+var reportedPerson = {
+    account: 'account02',
+    roleId: 'roleId02',
+    roleName: 'roleName02',
+    serverId: 'serverId02',
+    level: '10',
+    recharge: '9999'
+}
 var post_data = {
     // 设置用于计算签名的参数
     secretId: secretId,
@@ -17,9 +33,13 @@ var post_data = {
     version: version,
     timestamp: new Date().getTime(),
     nonce: "mmm888f73yyy59440583zzz9bfcc79de",
-    ip: "1.1.1.1",
-    sdkData: "your_sdk_data",
-    extData: "your_sdk_data",
+    reportChannel: "reportChannel",
+    reportTime: new Date().getTime(),
+    whistleblower: JSON.stringify(whistleblowerMap),
+    reportedPerson: JSON.stringify(reportedPerson),
+    reportType: "reportType01",
+    reportScene: "reportScene01",
+    reportData: "data",
 }
 var signature = utils.genSignature(secretKey, post_data);
 post_data.signature = signature;
