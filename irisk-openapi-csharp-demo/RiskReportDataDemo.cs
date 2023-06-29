@@ -1,4 +1,4 @@
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -67,15 +67,15 @@ namespace Com.Netease.Is.Irisk.Demo
             HttpClient client = Utils.makeHttpClient();
             String result = Utils.doPost(client, apiUrl, parameters, 10000);
             Console.WriteLine(result);
-            if (result != null)
+            if (result != null) 
             {
                 JObject ret = JObject.Parse(result);
                 int code = ret.GetValue("code").ToObject<Int32>();
                 String msg = ret.GetValue("msg").ToObject<String>();
-                if (code == 200)
+                if (code == 200) 
                 {
                     Console.WriteLine(String.Format("SUCCESS: code={0}, msg={1}", code, msg));
-                } else
+                } else 
                 {
                     Console.WriteLine(String.Format("ERROR: code={0}, msg={1}", code, msg));
                 }
