@@ -58,8 +58,7 @@ var sendHttpRequest = function (url, type, data, callback) {
         path: path,
         method: type,
         headers: {
-            'Content-Type': 'application/json; charset=UTF-8',
-            'Content-Length': content.length
+            'Content-Type': 'application/json; charset=UTF-8'
         }
     };
     var responseData = "";
