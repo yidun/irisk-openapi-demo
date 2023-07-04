@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f148af95-247a-42eb-a75a-e3000ac1b234" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../irisk-openapi-go-demo/media/RiskMediaCheckDemo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/irisk-openapi-java-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-go-demo/mobile/check/MobileRiskCheckDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-go-demo/check/RiskCheckDemo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-go-demo/mobile/config/RiskConfigDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-go-demo/config/RiskConfigDemo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-go-demo/mobile/detail/RiskDetailDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-go-demo/detail/RiskDetailDemo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-go-demo/pc/check/PcRiskCheckDemo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-go-demo/web/check/WebRiskCheckDemo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/.idea/sonarlint/issuestore/3/3/3384745651c56bcae31e033da5b1f53e16c19080" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/mobile/MobileRiskDetailDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/RiskDetailDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/mobile/RiskCheckDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/RiskCheckDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/mobile/RiskConfigDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/RiskConfigDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/pc/PcRiskCheckDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/util/SignatureUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/util/SignatureUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/web/WebRiskCheckDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-java-demo/src/main/java/com/netease/irisk/openapi/demo/RiskMediaCheckDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/irisk-openapi-nodejs-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/irisk-openapi-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08cc734f3199239a202e132cb32d522b32c3160e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/30191ed7fa75c2bfdfa96ef638228ec6ba4cb357" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/597ce257c2355072002984893c80e248e84cafa5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5da456edbac3f9ae44dbf86574265a213497170d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d738cf37b456b26268d6351c76598a57e161801c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f501383173c6ded7e4a1fcaaa495e337dea0f9f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/MobileRiskCheckDemo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/RiskConfigDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiskConfigDemo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/RiskDetailDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiskDetailDemo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc/PcRiskCheckDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiskCheckDemo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WebRiskCheckDemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/RiskMediaCheckDemo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/irisk-openapi-php-demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/sonarlint/issuestore/4/3/4305343db8d716e91c5b9fed7e2b00c6aa469ed9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/sonarlint/issuestore/4/a/4a277957883bf532eee4c87bd272d294bbd1f0bd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/sonarlint/issuestore/b/7/b71ea3a88d0f9366a6a5587d0dc95b8187514347" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/mobile/check/MobileRiskCheckDemo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/mobile/config/RiskConfigDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-php-demo/config/RiskConfigDemo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/mobile/detail/RiskDetailDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-php-demo/detail/RiskDetailDemo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/pc/check/PcRiskCheckDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-php-demo/check/RiskCheckDemo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-php-demo/web/check/WebRiskCheckDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-php-demo/media/RiskMediaCheckDemo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-python-demo/mobile/check/MobileRiskCheckDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-python-demo/mobile/config/RiskConfigDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-python-demo/config/RiskConfigDemo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-python-demo/mobile/detail/RiskDetailDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-python-demo/detail/RiskDetailDemo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-python-demo/pc/check/PcRiskCheckDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-python-demo/check/RiskCheckDemo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../irisk-openapi-python-demo/web/check/WebRiskCheckDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../irisk-openapi-python-demo/media/RiskMediaCheckDemo.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2M8I5q47R0WXlbWS9d5spBoz5A0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/dongyisheng/Project/irisk-openapi-demo/irisk-openapi-nodejs-demo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f148af95-247a-42eb-a75a-e3000ac1b234" name="Changes" comment="" />
+      <created>1677142601797</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677142601797</updated>
+      <workItem from="1677475742306" duration="342000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
