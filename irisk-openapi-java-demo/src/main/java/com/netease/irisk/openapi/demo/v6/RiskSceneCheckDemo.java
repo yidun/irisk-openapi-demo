@@ -20,7 +20,7 @@ public class RiskSceneCheckDemo {
     private static final String BUSINESS_ID = "your_business_id";
 
     // 版本号，如500
-    private static final String VERSION = "600";
+    private static final String VERSION = "603";
 
     // 接口URL
     private static final String API_URL = "http://ir-open.dun.163.com/v6/risk/check";
@@ -66,10 +66,12 @@ public class RiskSceneCheckDemo {
         params.put("account", "zzzzzzz");
         // 用户/玩家的等级
         params.put("level", 150);
-        // 游戏类型应用的版本号
-        params.put("gameVersion", "1.0.2");
-        // 游戏类型应用的资源版本号
-        params.put("assetVersion", "assetVersion");
+        // 当前用户身份，有助于对不同身份用户设置分层策略，方便业务进行精细化安全运营。
+        params.put("identity", "visitor");
+        // 当前用户是否付费用户，有助于对用户设置分层策略。
+        params.put("payUser", true);
+        // 当前用户是否认证用户（实名/真人认证），有助于对不同安全等级用户设置分层策略。
+        params.put("verified", true);
         // 额外/拓展的信息，应用 / 游戏方可以自己构建json结构，最大长度：2048。不同场景构建信息见分场景接入说明
         params.put("extData", "");
         // 活动操作的目标，比如：A给B点赞，则target为B。如果target是手机号或邮箱，请提供hash值，hash算法：md5(target)。如没有，可传空

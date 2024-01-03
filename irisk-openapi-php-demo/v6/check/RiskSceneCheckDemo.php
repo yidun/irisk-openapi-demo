@@ -5,7 +5,7 @@ const SECRET_ID = "your_secret_id";
 /** 密钥，从【易盾官网-服务管理-已开通业务】页面获取 */
 const SECRET_KEY = "your_secret_key";
 const BUSINESS_ID = "you_business_id";
-const VERSION = "600";
+const VERSION = "603";
 /** 接口URL */
 const API_URL = "http://ir-open.dun.163.com/v6/risk/check";
 /** API timeout*/
@@ -38,10 +38,12 @@ function check($params)
     $params["account"] = "zzzzzzz";
     // 用户/玩家的等级
     $params["level"] = 150;
-    // 游戏类型应用的版本号
-    $params["gameVersion"] = "1.0.2";
-    // 游戏类型应用的资源版本号
-    $params["assetVersion"] = "assetVersion";
+    // 当前用户身份，有助于对不同身份用户设置分层策略，方便业务进行精细化安全运营。
+    $params["identity"] = "visitor";
+    // 当前用户是否付费用户，有助于对用户设置分层策略。
+    $params["payUser"] = "true";
+    // 当前用户是否认证用户（实名/真人认证），有助于对不同安全等级用户设置分层策略。
+    $params["verified"] = "true";
     // 额外/拓展的信息，应用 / 游戏方可以自己构建json结构，最大长度：2048。不同场景构建信息见分场景接入说明
     $params["extData"] = "";
     // 活动操作的目标，比如：A给B点赞，则target为B。如果target是手机号或邮箱，请提供hash值，hash算法：md5(target)。如没有，可传空
