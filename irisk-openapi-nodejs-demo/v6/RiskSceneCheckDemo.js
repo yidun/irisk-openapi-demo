@@ -6,7 +6,7 @@ var secretKey = "your_secret_key";
 // 每个业务接入时，均会分配业务 ID
 var businessId = "your_business_id";
 // 版本号，如500
-var version = "600";
+var version = "603";
 // 本接口用于智能风控嫌疑数据在线检测，并且接口会同步返回检测结果。
 var apiurl = "http://ir-open.dun.163.com/v6/risk/check";
 // 场景信息，json格式，不同场景构建信息见分场景接入说明，此处以充值场景为例
@@ -49,10 +49,12 @@ var post_data = {
     account: "yyyyyyy",
     // 用户/玩家的等级
     level: 150,
-    // 游戏类型应用的版本号
-    gameVersion: "1.0.2",
-    // 游戏类型应用的资源版本号
-    assetVersion: "assetVersion",
+    // 当前用户身份，有助于对不同身份用户设置分层策略，方便业务进行精细化安全运营。
+    identity: "visitor",
+    // 当前用户是否付费用户，有助于对用户设置分层策略。
+    payUser: "true",
+    // 当前用户是否认证用户（实名/真人认证），有助于对不同安全等级用户设置分层策略。
+    verified: "true",
     // 额外/拓展的信息，应用 / 游戏方可以自己构建json结构，最大长度：2048。不同场景构建信息见分场景extData接入说明
     extData: "",
     // 活动操作的目标，比如：A给B点赞，则target为B。如果target是手机号或邮箱，请提供hash值，hash算法：md5(target)。如没有，可传空

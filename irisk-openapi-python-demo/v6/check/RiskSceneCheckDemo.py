@@ -60,7 +60,7 @@ if __name__ == "__main__":
     SECRET_ID = "your_secret_id"
     SECRET_KEY = "your_secret_key"
     BUSINESS_ID = "your_business_id"
-    VERSION = "600"
+    VERSION = "603"
     api = RiskCheckDemo(SECRET_ID, SECRET_KEY, BUSINESS_ID, VERSION)
 
     params = {
@@ -79,10 +79,12 @@ if __name__ == "__main__":
         "account": "zzzzzzz",
         # 用户/玩家的等级
         "level": "150",
-        # 游戏类型应用的版本号
-        "gameVersion": "1.0.2",
-        # 游戏类型应用的资源版本号
-        "assetVersion": "0.2.1",
+        # 当前用户身份，有助于对不同身份用户设置分层策略，方便业务进行精细化安全运营。
+        "identity": "visitor",
+        # 当前用户是否付费用户，有助于对用户设置分层策略。
+        "payUser": "true",
+        # 当前用户是否认证用户（实名/真人认证），有助于对不同安全等级用户设置分层策略。
+        "verified": "true",
         # 额外/拓展的信息，应用 / 游戏方可以自己构建json结构，最大长度：2048。不同场景构建信息见分场景接入说明
         "extData": "",
         # 活动操作的目标，比如：A给B点赞，则target为B。如果target是手机号或邮箱，请提供hash值，hash算法：md5(target)。如没有，可传空
